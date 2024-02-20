@@ -18,18 +18,29 @@ html {
     --Light-Grayish-Blue: hsl(210, 46%, 95%);
 }
 
-main {
+body {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+    
+}
+
+main {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--Light-Grayish-Blue);
+    /* position: absolute;
+    top: 0;
+    left: 0; */
 }
 
 .container {
-    width: 70rem;
+    width: 60rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
 }
 
 .img-container {
@@ -38,6 +49,8 @@ main {
     background: url(images/drawers.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 1rem 0 0 1rem;
 }
 
 /* RIGHT SIDE */
@@ -45,18 +58,30 @@ main {
 .text-container {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    justify-content: space-between;
+    align-items: space-between;
+    gap: 1.2rem;
+    padding: 2.2rem 2.5rem;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 1rem 1rem 0;
+
 }
 
 h1 {
     font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--Very-Dark-Grayish-Blue);
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    color: var(--Desaturated-Dark-Blue);
 }
 
 .contact-div {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,18 +95,177 @@ p {
 }
 
 #profile-pic {
-    width: 4rem;
+    width: 3.4rem;
     border-radius: 50%;
 }
 
-.share-icon {
-    width: 2rem;
+h2 {
+    font-size: 1.4rem;
+    color: var(--Very-Dark-Grayish-Blue);
 }
 
-/* #socials {
+.profiles p {
+    color: var(--Grayish-Blue);
+}
 
-} */
+#share-div-1 {
+    background-color: var(--Light-Grayish-Blue);
+    padding: .8rem;
+    border-radius: 50%;
+}
+
+#share-div-1:hover {
+    cursor: pointer;
+}
+
+.inverted-light {
+    fill: var(--Light-Grayish-Blue);
+}
+
+#share-div-1.inverted-dark {
+    background-color: var(--Very-Dark-Grayish-Blue);
+}
+
+#socials {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border-radius: .75rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5rem;
+    position: relative;
+    top: -14rem;
+    left: 43rem;
+}
+
+#share-div-2 {
+    display: none;
+}
+
+#socials p {
+    color: var(--Grayish-Blue);
+    padding: .5rem 1rem;
+    font-size: 1.4rem;
+    z-index: 1;
+    letter-spacing: .4rem;
+}
+
+.social-links {
+    padding: 1rem .5rem .7rem .5rem;
+    z-index: 1;
+}
+
+.social-links a {
+    padding: 0 1em;
+}
+
+.arrow {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: rotate(45deg);
+    width: 4rem;
+    height: 4rem;
+}
 
 .hidden {
     display: none;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer {
+    background-color: var(--Light-Grayish-Blue);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer a {
+    text-decoration: none;
+
+}
+
+@media (max-width: 450px) {
+    main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 20rem;
+        background-size: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .text-container {
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+    }
+
+    p {
+        line-height: 2.2rem;
+        font-size: 1.3rem;
+    }
+
+    .contact-div {
+        margin-top: 2rem;
+    }
+
+    #socials {
+        position: relative;
+        top: -7rem;
+        left: 0;
+        width: 100%;
+        height: 7rem;
+        border-radius: 0 0 1rem 1rem;
+        align-items: center;
+        justify-content: start;
+    }
+    #share-div-1 {
+        display: block;
+        background-color: var(--Light-Grayish-Blue);
+        padding: .7rem;
+        border-radius: 50%;
+    }
+    
+    #share-div-2 {
+        display: block;
+        margin-left: 5rem;
+        background-color: var(--Desaturated-Dark-Blue);
+        padding: .7rem;
+        border-radius: 50%;
+    }
+
+    #share-div-2:hover {
+        cursor: pointer;
+    }
+
+    #share-div-2.inverted-light {
+        fill: var(--Light-Grayish-Blue);
+    }
+
+    .share-icon {
+        width: 1.5rem;
+    }
+
+    .arrow {
+        display: none;
+    }
 }
