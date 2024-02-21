@@ -32,15 +32,12 @@ main {
     justify-content: center;
     align-items: center;
     background-color: var(--Light-Grayish-Blue);
-    /* position: absolute;
-    top: 0;
-    left: 0; */
 }
 
 .container {
-    width: 60rem;
+    width: 70rem;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 38% 1fr;
 }
 
 .img-container {
@@ -60,8 +57,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: space-between;
-    gap: 1.2rem;
-    padding: 2.2rem 2.5rem;
+    gap: 1.7rem;
+    padding: 3rem;
     background-color: white;
     position: relative;
     overflow: hidden;
@@ -70,18 +67,23 @@ main {
 }
 
 h1 {
-    font-size: 1.8rem;
+    margin-left: 1rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--Very-Dark-Grayish-Blue);
+    letter-spacing: .05rem;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--Desaturated-Dark-Blue);
+    letter-spacing: .03rem;
+    margin-left: 1rem;
 }
 
 .contact-div {
-    margin-top: 1rem;
+    /* margin-top: 2rem; */
+    margin-left: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
