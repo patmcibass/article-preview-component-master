@@ -69,7 +69,7 @@ main {
 h1 {
     margin-left: 1rem;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--Very-Dark-Grayish-Blue);
     letter-spacing: .05rem;
 }
@@ -82,7 +82,6 @@ p {
 }
 
 .contact-div {
-    /* margin-top: 2rem; */
     margin-left: 1rem;
     display: flex;
     align-items: center;
@@ -137,7 +136,7 @@ h2 {
     padding: .5rem;
     position: relative;
     top: -14rem;
-    left: 43rem;
+    left: 51.5rem;
 }
 
 #share-div-2 {
@@ -202,7 +201,7 @@ footer a {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        width: 80%;
+        width: 90%;
     }
 
     .img-container {
@@ -219,27 +218,49 @@ footer a {
     h1 {
         font-size: 1.6rem;
         line-height: 2.3rem;
+ 
     }
 
     p {
         line-height: 2.2rem;
         font-size: 1.3rem;
+        padding: .2rem;
     }
 
     .contact-div {
         margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #socials {
         position: relative;
-        top: -7rem;
+        top: -8rem;
         left: 0;
         width: 100%;
         height: 7rem;
         border-radius: 0 0 1rem 1rem;
         align-items: center;
-        justify-content: start;
+        justify-content: space-around;
     }
+
+    #socials p {
+        margin: 0 0 0 -1rem;
+    }
+
+    .social-links {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-left: -5rem;
+    }
+
+    .social-links a {
+        margin: -.3rem;
+    }
+
     #share-div-1 {
         display: block;
         background-color: var(--Light-Grayish-Blue);
@@ -249,7 +270,6 @@ footer a {
     
     #share-div-2 {
         display: block;
-        margin-left: 5rem;
         background-color: var(--Desaturated-Dark-Blue);
         padding: .7rem;
         border-radius: 50%;
